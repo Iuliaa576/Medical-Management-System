@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox spacing="30"
+      alignment="CENTER"
+      xmlns="http://javafx.com/javafx/25"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="gui.MainMenuController">
+
+    <Button text="PATIENT MANAGEMENT"
+            prefWidth="300"
+            prefHeight="60"
+            onAction="#openPatients"/>
+
+    <Button text="APPOINTMENT MANAGEMENT"
+            prefWidth="300"
+            prefHeight="60"
+            onAction="#openAppointments"/>
+
+    <Button text="SHOW REPORTS"
+            prefWidth="300"
+            prefHeight="60"
+            onAction="#openReports"/>
+
+    <!-- NEW -->
+    <Button text="BULK UPDATE DEMO"
+            prefWidth="300"
+            prefHeight="60"
+            onAction="#openBulkUpdateDemo"/>
+
+</VBox>

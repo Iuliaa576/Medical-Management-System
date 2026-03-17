@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<patients>
+    <patient>
+        <id>P01</id>
+        <name>James</name>
+        <email>james@gmail.com</email>
+        <phoneNumber>0808080808</phoneNumber>
+    </patient>
+    <patient>
+        <id>P03</id>
+        <name>Dany</name>
+        <email>dany@gmail.com</email>
+        <phoneNumber>0707070707</phoneNumber>
+    </patient>
+    <patient>
+        <id>P02</id>
+        <name>Alice</name>
+        <email>alice@yahoo.com</email>
+        <phoneNumber>0303030303</phoneNumber>
+    </patient>
+</patients>

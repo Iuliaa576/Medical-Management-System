@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<appointments>
+    <appointment>
+        <id>A01</id>
+        <patientId>P02</patientId>
+        <dateTime>2025-12-12/15:45</dateTime>
+    </appointment>
+    <appointment>
+        <id>A02</id>
+        <patientId>P01</patientId>
+        <dateTime>2025-12-19/16:00</dateTime>
+    </appointment>
+    <appointment>
+        <id>A03</id>
+        <patientId>P03</patientId>
+        <dateTime>2025-11-20/14:00</dateTime>
+    </appointment>
+    <appointment>
+        <id>A04</id>
+        <patientId>P01</patientId>
+        <dateTime>2025-12-19/17:30</dateTime>
+    </appointment>
+    <appointment>
+        <id>A05</id>
+        <patientId>P03</patientId>
+        <dateTime>2025-12-12/15:45</dateTime>
+    </appointment>
+</appointments>

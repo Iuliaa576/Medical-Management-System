@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<HBox spacing="20" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.PatientsGUIController">
+   <children>
+      <ListView fx:id="patientListView" minWidth="450.0" prefHeight="2926.0" prefWidth="450.0" />
+      <GridPane hgap="10.0" prefHeight="3221.0" prefWidth="607.0" vgap="10.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.66666666666666" minWidth="0.0" prefWidth="200.66666666666666" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.66666666666666" minWidth="0.0" prefWidth="200.66666666666666" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="0.0" prefWidth="0.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="123.33334668477376" minHeight="22.00000508626302" prefHeight="123.33334668477376" />
+          <RowConstraints maxHeight="173.3333282470703" minHeight="10.0" prefHeight="71.9999866485596" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="40.0" prefHeight="40.0"/>
+        </rowConstraints>
+         <children>
+            <Button fx:id="filterEmailButton" mnemonicParsing="false" onAction="#handleFilterByName" text="Filter" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label prefHeight="34.0" prefWidth="105.0" text="Name:" GridPane.rowIndex="1" />
+            <Label prefHeight="31.0" prefWidth="113.0" text="Email:" GridPane.rowIndex="2" />
+            <Label text="Age:" GridPane.rowIndex="4" />
+             <Label prefHeight="31.0" prefWidth="108.0" text="Phone:" GridPane.rowIndex="3" />
+            <Label prefHeight="29.0" prefWidth="111.0" text="ID:" />
+            <TextField fx:id="idField" GridPane.columnIndex="1" />
+            <TextField fx:id="nameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="emailField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="phoneField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="ageField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+             <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+               <children>
+                  <Button fx:id="addButton" mnemonicParsing="false" onAction="#handleAdd" prefHeight="39.0" prefWidth="135.0" text="Add" />
+                  <Button fx:id="updateButton" mnemonicParsing="false" onAction="#handleUpdate" prefHeight="39.0" prefWidth="131.0" text="Update" />
+                  <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#handleDelete" prefHeight="40.0" prefWidth="135.0" text="Delete" />
+               </children>
+            </HBox>
+            <Button fx:id="findButton" mnemonicParsing="false" onAction="#handleFindById" text="Find by ID" GridPane.columnIndex="2" />
+            <Label text="Filter by name" GridPane.rowIndex="6" />
+            <TextField fx:id="filterNameField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Button fx:id="filterNameButton" mnemonicParsing="false" onAction="#handleFilterByEmail" text="Filter" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label text="Filter by email" GridPane.rowIndex="7" />
+            <TextField fx:id="filterEmailField" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Button fx:id="resetButton" mnemonicParsing="false" onAction="#handleReset" text="RESET" GridPane.rowIndex="8" />
+             <HBox spacing="15"
+                   GridPane.columnSpan="3"
+                   GridPane.rowIndex="9"
+                   GridPane.halignment="CENTER">
+                 <children>
+                     <Button text="UNDO"
+                             prefWidth="120"
+                             onAction="#handleUndo"/>
+                     <Button text="REDO"
+                             prefWidth="120"
+                             onAction="#handleRedo"/>
+                 </children>
+             </HBox>
+         </children>
+      </GridPane>
+   </children>
+</HBox>

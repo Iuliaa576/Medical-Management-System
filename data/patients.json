@@ -1,0 +1,14 @@
+{
+  "P01": {
+    "id": "P01",
+    "name": "Jake",
+    "email": "jake@gmail.com",
+    "phoneNumber": "0808080808"
+  },
+  "P02": {
+    "id": "P02",
+    "name": "Dan",
+    "email": "dany@yahoo.com",
+    "phoneNumber": "0303030303"
+  }
+}
